@@ -1,0 +1,24 @@
+.right-section {
+  display: block;
+  direction: rtl;
+  margin-top: 150px;
+  margin-left: 455px;
+  width: 350px;
+  margin-left: 130px
+}
+
+.para {
+  font-weight: 400;
+  font-size: x-large;
+  color: var(--font-color);
+}
+.info-btn {
+  border-radius: 20px;
+  background-color: var(--main-color);
+  color: #fff;
+  width: 150px;
+  height: 35px;
+  text-align: center;
+  white-space: nowrap;
+  margin-top: 40px;
+}

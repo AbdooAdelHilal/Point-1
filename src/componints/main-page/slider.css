@@ -1,0 +1,40 @@
+.slider {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+}
+
+.slide {
+  font-size: 24px;
+  padding: 20px;
+  background: #007bff;
+  color: white;
+  border-radius: 10px;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #007bff;
+}
+
+button:hover {
+  color: #0056b3;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
