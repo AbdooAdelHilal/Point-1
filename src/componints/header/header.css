@@ -21,14 +21,10 @@
 .logo {
   display: flex;
   position: absolute;
-  margin-left: 770px;
-
+  margin-left:  70%;
   width: 200px;
-  /* margin-left: 60%; */
+  opacity: 1;
 }
-/* .spacebt {
-  width: 10%;
-} */
 .arabc-text {
   white-space: nowrap;
   direction: rtl;
@@ -53,4 +49,45 @@
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 5px solid var(--font-color);
+}
+.dropbtn {
+  /* padding: 10px 20px; */
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* قائمة Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* محتوى القائمة */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* الروابط داخل القائمة */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* إظهار القائمة عند تمرير الفأرة */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* تغيير لون الرابط عند التمرير */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
 }

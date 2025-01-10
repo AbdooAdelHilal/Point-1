@@ -80,8 +80,8 @@ button:hover {
 button:active {
   scale: 0.9;
 }
-.main-slider{
-  display:flex;
+.main-slider {
+  display: flex;
   justify-content: center;
 }
 @media (max-width: 1000px) {

@@ -42,6 +42,13 @@ export default function Mean2() {
           </div>
         </div>
       </div>
+      <div className="info-p">
+        <h1 className="info-p-h">الـــــجـــــودة</h1>
+        <p className="info-p-p">
+          “ بخصوص الجودة اننا نعمل جاهدينً علي تشغيل اجود المنسوجات لتقديمها
+          .لعملائنا وذلك حسب اختيار العملاء من مواصفات “
+        </p>
+      </div>
     </>
   );
 }
