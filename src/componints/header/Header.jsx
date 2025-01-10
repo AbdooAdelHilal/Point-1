@@ -2,7 +2,7 @@ import TshirtSlider from "../T-shirt/Tshirt-slider/Tshirt-slider";
 import React, { useState } from "react";
 // import React from "react";
 import logo from "../../background/logo.png";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./header.css";
 
 const Header = () => {
@@ -38,9 +38,9 @@ const Header = () => {
                 </button>
                 {isDropdownOpen && (
                   <div className="dropdown-content">
-                    <Link to="/src/componints/T-shirt/Tshirt-slider/Tshirt-slider.jsx">تي شيرت</Link>
-                    <Link to="/pants">بنطلونات</Link>
-                    <Link to="/shoes">أحذية</Link>
+                    <a href="/src/componints/T-shirt/Tshirt-slider/Tshirt-slider.jsx">تي شيرت</a>
+                    <a href="/pants">بنطلونات</a>
+                    <a href="/shoes">أحذية</a>
                   </div>
                 )}
               </div>
