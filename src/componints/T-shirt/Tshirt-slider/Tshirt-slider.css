@@ -4,18 +4,31 @@
   margin: 0 auto;
   padding: 20px;
   box-sizing: border-box;
+  display: grid;
 }
 
+.product-header {
+  text-align: center;
+  background-image: url(/src/background/teshirtbgcg.png);
+  width: 100%;
+  height: 18rem;
+  margin-bottom: 5rem;
+  background-color: var(--main-color);
+}
 .product-header h1 {
   font-size: 24px;
-  color: #0044cc;
+  color: #fff;
+  margin-top: 7rem;
 }
 
 .product-header p {
   font-size: 14px;
-  color: #777;
+  color: #fff;
+  margin-top: 2rem;
 }
-
+.product {
+  display: flex;
+}
 /* Product Section */
 .product-section {
   display: flex;
@@ -24,6 +37,7 @@
   align-items: flex-start;
   padding: 20px;
   gap: 20px;
+  width: 50%;
 }
 
 /* Slider Section */
@@ -33,21 +47,20 @@
 
 .product-slider img {
   max-width: 100%;
-  height: auto; 
+  height: auto;
   display: block;
   margin: 0 auto;
 }
 
-
 /* Product Info Section */
 .product-info {
-  width: 50%;
+  width: 90%;
   text-align: right;
 }
 
 .product-info h2 {
   font-size: 22px;
-  color: #333;
+  color: var(--main-color);
 }
 
 .product-info .product-rating {
@@ -58,15 +71,26 @@
 
 .product-info .product-description {
   font-size: 14px;
-  color: #555;
+  color: var(--font-color);
   margin: 10px 0;
 }
 
 .product-colors p {
   font-size: 14px;
   margin-bottom: 5px;
+  margin-bottom: 20px;
+  color: var(--main-color);
+  font-size: larger;
 }
-
+.product-description {
+  color: var(--font-color);
+}
+.spans-color {
+  margin-bottom: 1rem;
+}
+.product-info span {
+  color: var(--font-color);
+}
 .color-circle {
   display: inline-block;
   width: 20px;
@@ -84,7 +108,7 @@
 }
 
 .product-buttons .buy-now {
-  background-color: #0044cc;
+  background-color: var(--main-color);
   color: white;
   border: none;
   padding: 10px 20px;
@@ -93,25 +117,30 @@
   cursor: pointer;
   margin-right: 10px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .product-buttons .buy-now:hover {
-  background-color: #0033aa;
+  background-color: var(--main-color);
 }
 
 .product-buttons .custom-order {
-  background-color: #0044cc;
+  background-color: var(--main-color);
   color: white;
-  border: 1px solid #0044cc;
-  padding: 10px 20px;
+  border: 1px solid var(--main-color);
+  padding: 0 20px;
   font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
   margin-right: 10px;
 }
+.btn {
+  display: grid;
+  justify-self: end;
+}
 
 .product-buttons .custom-order:hover {
-  background-color: #0033aa;
+  background-color: var(--main-color);
 }
 
 /* Footer */
@@ -123,6 +152,7 @@
 .product-footer h1 {
   margin-bottom: 2rem;
   color: var(--font-color);
+  text-align: center;
 }
 .text-container {
   max-width: 800px;

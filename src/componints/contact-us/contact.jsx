@@ -1,9 +1,9 @@
 import "./contact.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import raia from "../../background/raia.png";
-import toshipa from "../../background/toshipa.png";
-import tepco from "../../background/tepco.png";
-import Petromin from "../../background/Petromin.png";
+import raia from "../../background/raiaL.png";
+import toshipa from "../../background/toshipaL.png";
+import tepco from "../../background/tepcoL.png";
+import Petromin from "../../background/petroL.png";
 
 import React from "react";
 
