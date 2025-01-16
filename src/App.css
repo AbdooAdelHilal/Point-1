@@ -36,6 +36,9 @@
     transform: rotate(360deg);
   }
 }
+.Head{
+  display: flex;
+}
 .container{
   width: 1000px;
   margin-left: auto;

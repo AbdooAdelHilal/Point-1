@@ -46,6 +46,9 @@ html {
   margin: 0;
   padding: 0;
 }
+.Head{
+  display: flex;
+}
 
 .container {
   width: 90%;

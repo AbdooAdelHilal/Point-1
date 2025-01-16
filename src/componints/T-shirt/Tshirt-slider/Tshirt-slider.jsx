@@ -8,7 +8,6 @@ import orang from "../../../background/orangT.png";
 import red from "../../../background/redT.png";
 import PopupPage from "../Tshirt-slider/PopupPage";
 import { Navigation, Pagination } from "swiper/modules";
-
 import "./Tshirt-slider.css";
 
 const TshirtSlider = () => {
@@ -20,6 +19,27 @@ const TshirtSlider = () => {
   const handleOverlayClick = (e) => {
     if (e.target.className === "popup-overlay") {
       closePopup();
+    }
+  };
+  const [selectedSize, setSelectedSize] = useState(null);
+  const [selectedColor, setSelectedColor] = useState(null);
+  const [quantity, setQuantity] = useState(1);
+
+  const handleSizeClick = (size) => {
+    setSelectedSize(size);
+  };
+
+  const handleColorClick = (color) => {
+    setSelectedColor(color);
+  };
+
+  const incrementQuantity = () => {
+    setQuantity(quantity + 1);
+  };
+
+  const decrementQuantity = () => {
+    if (quantity > 1) {
+      setQuantity(quantity - 1);
     }
   };
 
@@ -67,20 +87,59 @@ const TshirtSlider = () => {
               المقاسات.
             </p>
             <div className="product-colors">
+              <div className="options">
+                {/* المقاسات */}
+                <div className="option-group">
+                  <label>المقاسات</label>
+                  <div className="sizes">
+                    {["S", "M", "L", "XL"].map((size) => (
+                      <button
+                        key={size}
+                        className={`size-button ${
+                          selectedSize === size ? "active" : ""
+                        }`}
+                        onClick={() => handleSizeClick(size)}
+                      >
+                        {size}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+                {/* الكمية */}
+                <div className="option-group">
+                  <label>الكمية</label>
+                  <div className="quantity-controls">
+                    <button
+                      onClick={decrementQuantity}
+                      className="quantity-button"
+                    >
+                      -
+                    </button>
+                    <input type="number" value={quantity} readOnly />
+                    <button
+                      onClick={incrementQuantity}
+                      className="quantity-button"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
               <p>الألوان:</p>
               <div className="spans-color">
-                <span
-                  className="color-circle"
-                  style={{ backgroundColor: "red", cursor: "pointer" }}
-                ></span>
-                <span
-                  className="color-circle"
-                  style={{ backgroundColor: "blue", cursor: "pointer" }}
-                ></span>
-                <span
-                  className="color-circle"
-                  style={{ backgroundColor: "yellow", cursor: "pointer" }}
-                ></span>
+                {["red", "yellow", "blue"].map((color) => (
+                  <span
+                    key={color}
+                    className={`color-circle ${color} ${
+                      selectedColor === color ? "selected" : ""
+                    }`}
+                    onClick={() => handleColorClick(color)}
+                  >
+                    {selectedColor === color && (
+                      <span className="check-mark">✔</span>
+                    )}
+                  </span>
+                ))}
               </div>
             </div>
             <div className="btn">

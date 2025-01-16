@@ -186,3 +186,116 @@
     grid-template-columns: 1fr;
   }
 }
+
+.options {
+  display: flex;
+  gap: 6rem;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.option-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.option-group label {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* الكمية */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.quantity-button {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.quantity-button:hover {
+  background-color: #e0e0e0;
+}
+
+input[type="number"] {
+  width: 50px;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* المقاسات */
+.sizes {
+  display: flex;
+  gap: 10px;
+}
+
+.size-button {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.size-button.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.size-button:hover {
+  background-color: #e0e0e0;
+}
+
+/* الألوان */
+.colors {
+  display: flex;
+  gap: 10px;
+}
+
+.color-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  position: relative;
+}
+
+.color-circle.red {
+  background-color: red;
+}
+
+.color-circle.yellow {
+  background-color: yellow;
+}
+
+.color-circle.blue {
+  background-color: blue;
+}
+
+/* .color-circle.selected {
+  border: 2px solid #007bff;
+} */
+
+.color-circle .check-mark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
