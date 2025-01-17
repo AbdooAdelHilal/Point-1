@@ -38,7 +38,6 @@ const Header = () => {
 
               <li>
                 <div className="dropdown">
-                  
                   <button
                     className={`dropbtn arabc-text ${
                       isDropdownOpen ? "open" : ""
@@ -46,8 +45,7 @@ const Header = () => {
                     onClick={toggleDropdown}
                   >
                     <span className="arrow-down">▼</span>
-                    الأصناف 
-                    
+                    الأصناف
                   </button>
                   {isDropdownOpen && (
                     <div className="dropdown-content">
